@@ -1,0 +1,392 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #222933;
+    z-index: 1000;
+}
+
+.nav {
+    max-width: 1200px;      
+    margin: 0 auto;
+    height: 100px;
+    display: flex;          
+    align-items: center;     
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.header .logo h2 {
+    color: white;
+    margin: 0;
+    font-weight: bold;
+}
+
+.header .logo span {
+    color: orangered;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.menu ul li a:hover {
+    color: orangered;
+}
+
+.nav input{
+    border: 2px solid orangered;
+    width: 150px;
+}
+.nav .btn{
+    color: white;
+    background-color: orangered ;
+    font-weight: bold;
+}
+
+.nav .btn:hover{
+    background-color: rgb(180, 58, 14);
+    color: white;
+}
+
+.carousel-inner img {
+    width: 100%;    
+    max-height: 660px; 
+    object-fit: cover; 
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 60%;
+}
+
+.carousel-inner h5{
+    font-size: 40px;
+    font-weight: bold;
+}
+.carousel-inner p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.carousel-inner .btn{
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+}
+.carousel-inner .btn:hover{
+    background-color: rgb(153, 55, 19);
+    color: white;
+}
+
+
+    .rating {
+        display: block;
+        margin: 6px 0;
+        font-size: 14px;
+        color: #aaa;
+    }
+
+.rating i {
+    color: gold;
+    margin-left: 3px;
+}
+
+
+
+
+#kinolar {
+    padding: 60px 0;
+}
+
+
+
+.section-title {
+    position: relative;
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 30px;
+    padding-left: 30px;
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5px;       
+    height: 100%;      
+    background: orangered;
+    border-radius: 3px; 
+}
+.kino-k {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.kino-card {
+    background: #111;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.kino-card:hover {
+    transform: translateY(-5px);
+}
+
+.kino-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.kino-card h3 {
+    margin: 10px 0 5px;
+}
+
+.kino-card p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.duration {
+    display: block;
+    font-size: 13px;
+    margin: 6px 0 10px;
+    color: #aaa;
+}
+
+.duration strong {
+    color: orange;
+    font-weight: 600;
+}
+
+.kino-card .btn {
+    display: inline-block;
+    padding: 6px 15px;
+    background: orangered;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.kino-k .btn{
+    font-weight: bold;
+}
+.kino-k .btn:hover{
+    background-color: rgb(150, 56, 22);
+    color: white;
+}
+
+
+
+
+.news-k {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px; 
+    margin-top: 40px;
+}
+
+.news-card {
+    display: flex;
+    gap: 20px;
+    background: #1c242c;
+    padding: 20px;
+    border-radius: 12px;
+    align-items: center;
+}
+
+.news-card img {
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.news-content h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.news-content p {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.news-content .news-date {
+    display: block;
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+.news-content .btn {
+    background: orangered;
+    color: #fff;
+    padding: 7px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.news-content .btn:hover{
+    background-color: rgb(149, 52, 17);
+    color: white;
+}
+
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.service-card {
+    background: #1a222b;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+.service-card img {
+    width: 60px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.scroll-top-btn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: orangered;
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 50%;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition:  0.3s;
+    font-weight: bold;
+}
+
+.scroll-top-btn:hover {
+    background-color: #712c17;
+    color: white;
+}
+
+
+
+
+.site-footer {
+    background-color: #0d1117;
+    color: #ccc;
+    padding: 40px 0;
+    margin-top: 50px;
+}
+
+.site-footer a {
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+.site-footer a:hover {
+    color: orangered;
+}
+
+.site-footer .footer-logo {
+    color: white;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+
+.site-footer .footer-logo span {
+    color: white;
+    font-style: italic;
+}
+
+.site-footer .footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.site-footer .footer-links li {
+    margin-bottom: 10px;
+}
+
+.site-footer .footer-social a {
+    color: #ccc;
+    font-size: 1.5rem;
+    margin-right: 20px;
+    
+}
+
+
+.site-footer .footer-social a:hover {
+    color: orangered;
+}
+
+.site-footer .footer-bottom {
+    color: #777;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+
